@@ -1,6 +1,6 @@
 # <img src="https://github.com/ponhvoan/TruthAnchor/raw/main/ASSETS/anchor.png" width="3%" align="center"></img> TruthAnchor
 
-TruthAnChor (TAC) calibrates raw uncertainty scores of LLM responses into truth-aligned scores. Given score-label pairs $\{S_i, C_i\}_{i=1}^{n}$, where $S\in\{0,1\}$, with $S=1$ indicating a correct response, we approximate the target $p^\star(S)=P(C=1\mid S)$ by learning the mapping:
+TruthAnChor (TAC) calibrates raw uncertainty scores of LLM responses into truth-aligned scores. Given score-label pairs $\lbrace S_i, C_i \rbrace_{i=1}^{n}$, where $S\in\\lbrace 0,1 \rbrace$, with $S=1$ indicating a correct response, we approximate the target $p^\star(S)=P(C=1\mid S)$ by learning the mapping:
 
 $$
 m_\theta: \mathbb{R} \to [0,1],
